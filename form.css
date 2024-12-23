@@ -1,0 +1,58 @@
+/* Form Related Rules */
+nav {
+    /*had to reset nav because it gave a huge space on chrome using flex:100%*/
+    flex: initial;
+}
+
+fieldset {
+    border: black solid 1px;
+    border-radius: 6px;
+    margin: 10px auto;
+    max-width: 98%;
+}
+
+legend {
+    font-size: 1.3em;
+    color: #000000;
+    font-family: Calibri, sans-serif;
+    margin-bottom: 10px;
+}
+
+textarea {
+    color: rgba(178, 28, 8, 1);
+    width: 50ch;
+    height: 6em;
+    max-width: 98%;
+    box-sizing: border-box;
+    border: 2px solid lightgrey;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: white;
+}
+
+label {
+    width: 12%;
+    display: inline-block;
+    user-select: none;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=url],
+input[type=password] {
+    margin-left: 10px;
+    width: 70%;
+    box-sizing: border-box;
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: white;
+}
+
+/*shows which text box is active*/
+input:focus,
+textarea:focus {
+    background-color: aliceblue;
+    color: rgba(150, 45, 62, 1);
+}

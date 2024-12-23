@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <header>
+        <img src="assets/Newt-Powers-logo-trans.png" alt="gear with tree logo" id="logo">
+        <h1>Newt Powers Portfolio</h1>
+    </header>
+    <nav class="menu-area">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="experience.html">Experience</a>
+                <ul class="dropdown">
+                    <li><a href="assets/Newt-Powers-Resume.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="form.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main id="columnHolder">
+        <section id="form">
+            <h2>Contact Me</h2>
+            <p>Please feel free to reach out to me if you have any questions about my portfolio, have job opportunities,
+                or would like to work together on a project or a startup.</p>
+
+            <form action="https://formspree.io/f/xanyzqwd" method="POST">
+
+                <fieldset>
+                    <legend>Contact Information</legend>
+
+                    <p><label for="first">First Name:</label>
+                        <input name="first" type="text" id="first">
+                    </p>
+
+                    <p><label for="last">Last Name:</label>
+                        <input name="last" type="text" id="last">
+                    </p>
+
+                    <p><label for="email">Email:</label>
+                        <input name="email" type="email" id="email">
+                    </p>
+
+                    <p><label for="telephone">Phone Number:</label>
+                        <input name="telephone" type="tel" id="telephone">
+                    </p>
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <p><label for="url">Portfolio Link:</label> <input type="url" name="url" id="url" size="60"></p>
+                    <p>Profession:
+                        <input name="profession" id="professionStudent" type="radio" value="student"> <label
+                            for="professionStudent">Student </label>
+                        <input name="profession" id="professionTeacher" type="radio" value="teacher"><label
+                            for="professionTeacher"> Teacher</label>
+
+                        <input name="profession" id="professionEmployee" type="radio" value="employee"><label
+                            for="professionEmployee"> Employee</label>
+
+                        <input name="profession" id="professionEmployer" type="radio" value="employer"><label
+                            for="professionEmployer"> Employer</label>
+
+                        <input name="profession" id="professionFounder" type="radio" value="founder"><label
+                            for="professionFounder"> Founder</label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Thematic Information</legend>
+                    <p>What topics do you want to talk about?<br>
+                        <input type="checkbox" name="Environment" id="Environment" value="yes">
+                        <label for="Environment"> Environment</label><br>
+
+                        <input type="checkbox" name="Entrepreneurship" id="Entrepreneurship" value="yes">
+                        <label for="Entrepreneurship">Entrepreneurship</label><br>
+
+                        <input type="checkbox" name="Technology" id="Technology" value="yes">
+                        <label for="Technology">Technology</label><br>
+
+                        <input type="checkbox" name="Arts" id="Arts" value="yes">
+                        <label for="Arts">Arts</label> <br>
+
+                    </p>
+                </fieldset>
+
+                <!-- <fieldset>
+                    <p><label>What is your favorite hobby? 
+                        <input list="hobbies" name="hobbies" >
+                        <datalist id="hobbies">
+                            <option >Playing Music</option>
+                            <option>Listening to Music</option>
+                            <option>Hanging with my friends</option>
+                            <option>Sports</option>
+                        </datalist>
+                        </label>
+                    </p>
+                </fieldset> -->
+
+                <fieldset>
+                    <legend>Referral Questionnaire</legend>
+                    <p><label for="size">Do you want a referral for a job? </label>
+                        <select name="size" id="size" size="1">
+                            <option value="blank">&nbsp;</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                            <option value="maybe">Maybe</option>
+                        </select>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <p><label for="textarea">What would you like to discuss?</label><br>
+                        <textarea name="textarea" id="textarea"></textarea>
+                    </p>
+                </fieldset>
+
+                <p>
+
+                    <input name="Submit" type="submit" value="Submit Form">
+                    <input name="reset" type="reset" value="Clear Form">
+                </p>
+
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2024 <a href="/">Newt Powers</a></p>
+    </footer>
+</body>

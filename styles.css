@@ -1,0 +1,278 @@
+/*mobile first display*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+
+body {
+  background-color: #f4f4f6;
+  font-family: "Source Sans 3", sans-serif;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+article,
+aside,
+footer,
+header {
+  padding: 8px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+main {
+  border-left: solid black 1px;
+  border-right: solid black 1px;
+  /* max-width: 1400px; */
+  /*about 16 px*/
+  padding: 0 1rem;
+  /* margin: 0 auto; */
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.projects main div {
+  max-width: 40ch;
+}
+
+.projects main div img {
+  max-width: 100%;
+}
+
+/* body.home {
+  max-width: 767px;
+} */
+
+header,
+footer {
+  background-color: #66666E;
+  color: #000000;
+  text-align: center;
+  border-bottom: 1px solid #E6E6E9;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+#columnHolder {
+  display: flex;
+  flex-direction: row;
+}
+
+#sectionContent {
+  border-top: solid black 1px;
+  padding: 10px;
+}
+
+.invis {
+  display: none;
+}
+
+#logo {
+  /*float: left;*/
+  height: 80px;
+  margin-right: 10px;
+}
+
+article {
+  flex-basis: 100%;
+  /* border-right: solid black 1px; */
+}
+
+article img {
+  max-width: calc(100%);
+}
+
+article:nth-child(4) {
+  border-right: none;
+}
+
+/*navbar styling*/
+
+nav {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  flex: 100%;
+}
+
+nav a {
+  background: white;
+  color: black;
+}
+
+nav a:hover {
+  background: #9999A1;
+  color: white;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  flex: auto;
+  list-style-type: none;
+  border-right: solid black 1px;
+  border-bottom: solid black 1px;
+}
+
+ul li:nth-child(1) {
+  border-left: solid black 1px;
+}
+
+ul li a {
+  display: flex;
+  flex: auto;
+  text-align: center;
+  text-decoration: none;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: black;
+  padding: 10px;
+}
+
+/*dropdown navigation bar styling */
+.menu-area a {
+  display: flex;
+  /* display the nav items along the center of the container*/
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-area ul {
+  /* not bullets, default */
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-area ul li {
+  /*positioned relative to normal element*/
+  position: relative;
+  width: 100%;
+}
+
+/*dropdown styling for resume under experience */
+.dropdown li {
+  /*defaults */
+  display: none;
+  position: relative;
+}
+
+.dropdown {
+  /*postition relative to nearest ancestor, experience*/
+  position: absolute;
+  flex-direction: column;
+  top: 43px;
+  /*dropdown tab takes up half the screen*/
+  width: 50%;
+  /*positioned above other elements*/
+  z-index: 10;
+}
+
+/*displays the dropdown tab as a block element for viewing*/
+.menu-area li:hover .dropdown>li {
+  display: block;
+  top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    max-width: 75rem;
+  }
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  nav,
+  header {
+    order: -1;
+  }
+
+  nav {
+    flex-direction: row;
+  }
+
+  nav a {
+    flex: auto;
+  }
+
+  aside,
+  section {
+    flex: 100%;
+  }
+
+  /*transition to mobile screens *display*/
+  .menu-area ul {
+    flex-direction: row;
+  }
+
+  /* #columnHolder>* {
+    width: 50%;
+  } */
+
+  .dropdown {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+
+/* large screen */
+@media screen and (min-width: 992px) {
+    article {
+        flex: 35%;
+    }
+    aside {
+        flex: 30%;
+    }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+
+/*styling for the table*/
+table,
+td,
+th {
+  padding: 15px;
+  border-spacing: 10px;
+  border: solid 2px;
+  border-collapse: collapse;
+}
+
+#experience-table {
+  caption-side: top;
+}
+
+tr:nth-child(2n) {
+  background-color: #f4f4f6;
+}
+
+tr:hover {
+  background-color: grey;
+}

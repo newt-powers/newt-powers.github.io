@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+    </style>
+</head>
+
+<body class="projects">
+    <main>
+        <header>
+            <img src="assets/Newt-Powers-logo-trans.png" alt="gear with tree logo" id="logo">
+            <h1>Newt Powers Portfolio</h1>
+        </header>
+        <nav class="menu-area">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="experience.html">Experience</a>
+                    <ul class="dropdown">
+                        <li><a href="assets/Newt-Powers-Resume.pdf" target="_blank">Resume</a></li>
+                    </ul>
+                </li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="form.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!--hyperlink images of projects to their respective links-->
+        <div>
+            <h3>NASA Accelerometer Project</h3>
+            <br>
+            <img src="assets/nasa-project.png" alt="nasa project image" width="350">
+            <br>
+            <!--presentation link https://drive.google.com/file/d/1XbCJPL4wPuWWDiZaSanvZf0yxHmX9vJa/view -->
+            <a href="https://drive.google.com/file/d/1XbCJPL4wPuWWDiZaSanvZf0yxHmX9vJa/view">Presentation</a>
+            <p>Project Title: "Angle Measurement Electronics Development to Support Aeronautics Research"
+                - Implement a counting method to calculate and store accelerometer frequencies in 6 registers using VHDL to
+                obtain more precise angle measurements for aeronautics applications
+                - Write a script for SPl communication for a binary signal 96 bit MISO transmission to a microcontroller</p>
+        </div>
+
+        <div>
+            <h3>Antenna PCB Design at CU Boulder</h3>
+            <br>
+            <img src="assets/pcb-design.png" alt="pcb design of antenna" width="350">
+            <br>
+            <!-- https://drive.google.com/file/d/1Shw2UhmZQ-DCwD3OzxB_6NFoX2_OlpxC/view?usp=sharing -->
+            <a href="https://drive.google.com/file/d/1Shw2UhmZQ-DCwD3OzxB_6NFoX2_OlpxC/view?usp=sharing">Research Poster</a>
+            <p>- Designed a printed circuit board for a Yagi-Uda antenna transceiver using Autodesk Eagle, placing
+                electrical component pads and making connections to top and ground wires
+                - Simulated a 10 director wire antenna design using 4nec2, resulting in a 43.8% increase in the horizontal
+                gain, increasing the efficiency of signal transmission at the 150 MHz frequency
+                - Searched through technical specification documents for cost, size, and power-efficient capacitors and
+                inductors and imported them 1 usage in a schematic</p>
+        </div>
+        
+        <div>
+        <h3>Soil Moisture Alert App</h3>
+        <br>
+        <a href="https://devpost.com/software/soil-moisture-alert-app">
+            <img src="assets/soil-moisture-sensor.png" alt="soil moisture sensor setup" width="350">
+            <br>
+            <!-- https://devpost.com/software/soil-moisture-alert-app -->
+            Project Showcase
+        </a>
+        <p>At the Tribe Hacks Spring 2024 hackathon, I created a way to alert users when they need to water their
+            plants. My team and I first wrote code in C++ to retrieve soil moisture values from a sensor using an
+            Arduino microcontroller. We then used a Python script to parse the data and send the current value to a
+            MongoDB database. Next, we polled the database from a Flask website coded using HTML, CSS, and Python to
+            determine when to water the plants using the current moisture value and alert users while also displaying a
+            graph about soil moisture levels over time. We won the best People and Planet Hack out of 100+ participants
+            and 27 teams</p>
+        </div>
+
+        <div>
+        <h3>Embedded Accelerometer Game</h3>
+        <br>
+        <img src="assets/infinite-asteroids.png" alt="game image infinite asteroids" width="350">
+        <br>
+        <!-- https://medium.com/@nptechvideos/infinite-asteroids-an-introduction-to-embedded-systems-fed7c406c74c -->
+        <a
+            href="https://medium.com/@nptechvideos/infinite-asteroids-an-introduction-to-embedded-systems-fed7c406c74c">Article</a>
+        <p>I created a game called Infinite Asteroids, running on a 32 Bit ARM development board, whose objective is to
+            move a character left and right to avoid falling asteroids. I created a random spawn algorithm and collision
+            logic for 8 game objects in Python using Pygame. I also mapped the tilting of an on-board accelerometer to
+            the horizontal motion by transmitting angle data through a USB interface and implemented a reset button with
+            interrupts. I used the C programming language to do so.</p>
+        </div>
+        <footer>
+            <p>Copyright Newt Powers; 2024</p>
+        </footer>
+    </main>
+
+</body>
+
+</html>
